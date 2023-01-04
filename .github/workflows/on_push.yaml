@@ -4,10 +4,10 @@ on:
 
 jobs:
   say_hello: #first job declaration
-  name: "Say hello"
-  runs-on: ubuntu-latest
-  steps: 
-    # the following step execute a shel script
-    - name: "Say hello"
-      run: |
-        echo "HEllo, world !"
+    name: "Say hello"
+    runs-on: ubuntu-latest
+    steps: 
+      # the following step execute a shel script
+      - name: "Say hello"
+        run: |
+          echo "HEllo, world !"
