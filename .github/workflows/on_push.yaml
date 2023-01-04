@@ -7,15 +7,14 @@ jobs:
     name: "Say hello"
     runs-on: ubuntu-latest
     steps: 
-      # the following step execute a shel script
       - name: "Say hello"
         run: |
           echo "HEllo, world !"
       # The following step execute a shell script
       - name: "Install python"
-      run: sudo apt update && sudo apt install python3 && sudo apt install python3-pip
+        run: sudo apt update && sudo apt install python3 && sudo apt install python3-pip
       - uses: actions/checkout@v1
       - name: "Install pylint"
-      run: pip install pylint
+        run: pip install pylint
       - name: "Execute script"
-      run: pylint ./test.py
+        run: pylint ./test.py
